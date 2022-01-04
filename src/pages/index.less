@@ -1,0 +1,70 @@
+// .container {
+//   width: 100%;
+//   min-height: 100%;
+//   display: flex;
+//   flex-flow: nowrap column;
+//   overflow: hidden;
+// }
+
+.panel {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+}
+
+.body {
+  background: gray;
+  flex-grow: 3;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.sideBarResizeContainer {
+  width: 20%;
+}
+.sidebar {
+  background: lightpink;
+  min-width: 200px;
+  width: 200px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.withMargin {
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.content {
+  flex-grow: 2;
+  background: white;
+}
+
+.customHandle {
+  cursor: ew-resize;
+  width: 10px;
+  height: 100px;
+  margin: 0px -5px;
+  background: lightblue;
+  border: 0px solid gray;
+  border-radius: 2px;
+  text-align: center;
+  z-index: 99999;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.customResizeBorder {
+  cursor: ew-resize;
+  width: 5px;
+  background: gray;
+  display: flex;
+  z-index: 99999;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  overflow: visible;
+}
