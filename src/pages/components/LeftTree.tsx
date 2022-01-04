@@ -18,7 +18,6 @@ export default function () {
               title: (
                 <>
                   <div>multiple line title</div>
-                  <div>multiple line title</div>
                 </>
               ),
               key: '0-0-0-1',
@@ -47,6 +46,86 @@ export default function () {
               icon: <CarryOutOutlined />,
               switcherIcon: <FormOutlined />,
             },
+          ],
+        },
+      ],
+    },
+    {
+      title: 'parent 2',
+      key: '0-1',
+      icon: <CarryOutOutlined />,
+      children: [
+        {
+          title: 'parent 2-0',
+          key: '0-1-0',
+          icon: <CarryOutOutlined />,
+          children: [
+            { title: 'leaf', key: '0-1-0-0', icon: <CarryOutOutlined /> },
+            { title: 'leaf', key: '0-1-0-1', icon: <CarryOutOutlined /> },
+          ],
+        },
+      ],
+    },
+    {
+      title: 'parent 2',
+      key: '0-1',
+      icon: <CarryOutOutlined />,
+      children: [
+        {
+          title: 'parent 2-0',
+          key: '0-1-0',
+          icon: <CarryOutOutlined />,
+          children: [
+            { title: 'leaf', key: '0-1-0-0', icon: <CarryOutOutlined /> },
+            { title: 'leaf', key: '0-1-0-1', icon: <CarryOutOutlined /> },
+          ],
+        },
+      ],
+    },
+    {
+      title: 'parent 2',
+      key: '0-1',
+      icon: <CarryOutOutlined />,
+      children: [
+        {
+          title: 'parent 2-0',
+          key: '0-1-0',
+          icon: <CarryOutOutlined />,
+          children: [
+            { title: 'leaf', key: '0-1-0-0', icon: <CarryOutOutlined /> },
+            { title: 'leaf', key: '0-1-0-1', icon: <CarryOutOutlined /> },
+          ],
+        },
+      ],
+    },
+    {
+      title: 'parent 2',
+      key: '0-1',
+      icon: <CarryOutOutlined />,
+      children: [
+        {
+          title: 'parent 2-0',
+          key: '0-1-0',
+          icon: <CarryOutOutlined />,
+          children: [
+            { title: 'leaf', key: '0-1-0-0', icon: <CarryOutOutlined /> },
+            { title: 'leaf', key: '0-1-0-1', icon: <CarryOutOutlined /> },
+          ],
+        },
+      ],
+    },
+    {
+      title: 'parent 2',
+      key: '0-1',
+      icon: <CarryOutOutlined />,
+      children: [
+        {
+          title: 'parent 2-0',
+          key: '0-1-0',
+          icon: <CarryOutOutlined />,
+          children: [
+            { title: 'leaf', key: '0-1-0-0', icon: <CarryOutOutlined /> },
+            { title: 'leaf', key: '0-1-0-1', icon: <CarryOutOutlined /> },
           ],
         },
       ],
