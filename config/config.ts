@@ -5,6 +5,6 @@ export default defineConfig({
     type: 'none',
   },
   fastRefresh: {},
-  base: '/docs/',
+  base: 'http://192.168.0.16:8000/docs/',
   mfsu: {},
 });

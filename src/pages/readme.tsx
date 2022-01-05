@@ -21,13 +21,13 @@ export default function () {
             </div>
             <div className={cx('menustyle')}>
               <div className={cx('leftTree')}>
-                <LeftTree />
+                <LeftTree type="readme" />
               </div>
             </div>
           </div>
         </ResizePanel>
         <div className={cx('content', 'panel')}>
-          <ApiContent />
+          <ApiContent type="readme" />
         </div>
       </div>
     </div>

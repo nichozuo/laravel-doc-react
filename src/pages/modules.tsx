@@ -10,7 +10,7 @@ export default function () {
   return (
     <div className={cx('container')}>
       <div className={cx('body')}>
-        <ResizePanel direction="e" style={{ flexGrow: '1' }}>
+        <ResizePanel direction="e" style={{ flexGrow: '0.4' }}>
           <div className={cx('sidebar', 'withMargin', 'panel')}>
             <div className={cx('menu_search')}>
               <Select
@@ -21,13 +21,13 @@ export default function () {
             </div>
             <div className={cx('menustyle')}>
               <div className={cx('leftTree')}>
-                <LeftTree />
+                <LeftTree type="modules" />
               </div>
             </div>
           </div>
         </ResizePanel>
         <div className={cx('content', 'panel')}>
-          <ApiContent />
+          <ApiContent type="modules" />
         </div>
       </div>
     </div>

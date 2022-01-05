@@ -1,7 +1,8 @@
-export default function () {
+import Markdown from './markdown';
+export default function (props: any) {
   return (
-    <div style={{ padding: '15px' }}>
-      <h1>title</h1>
+    <div style={{ padding: '15px 30px' }}>
+      <Markdown type={props.type} />
     </div>
   );
 }
