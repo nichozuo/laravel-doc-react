@@ -50,16 +50,16 @@ export default function (props: any) {
 
   useEffect(() => {
     request.post(API.getMenu, { data: { type: props.type } }).then((res) => {
-      setTreeData(res.data);
-      let key = getLeaf(res.data) as any;
-      setDefault(key);
-      onExpand([key]);
+      // setTreeData(res.data);
+      // let key = getLeaf(res.data) as any;
+      // setDefault(key);
+      // onExpand([key]);
     });
   }, []);
   return (
     <Tree
       onExpand={onExpand}
-      onCheck={onCheck}
+      // onCheck={onCheck}
       onSelect={onSelect}
       showLine={true}
       showIcon={false}

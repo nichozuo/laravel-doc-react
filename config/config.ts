@@ -1,10 +1,15 @@
 import { defineConfig } from 'umi';
+import { IConfigFromPlugins } from '../src/.umi/core/pluginConfig.d';
 
 export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
   fastRefresh: {},
-  base: 'http://192.168.0.16:8000/docs/',
   mfsu: {},
+  base: '/docs/',
+  dynamicImport: {},
+  hash: true,
+  history: { type: 'browser' },
+  title: 'API Document',
 });

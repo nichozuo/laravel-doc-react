@@ -1,17 +1,3 @@
-// .container {
-//   width: 100%;
-//   min-height: 100%;
-//   display: flex;
-//   flex-flow: nowrap column;
-//   overflow: hidden;
-// }
-
-.panel {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-}
-
 .body {
   background: #f1f1f1;
   flex-grow: 1;
@@ -72,17 +58,17 @@
   justify-content: center;
   overflow: visible;
 }
-.menu_search {
+.menuSearch {
   height: 45px;
   line-height: 45px;
   padding: 0 5px;
   background-color: #f8f8f8;
 }
-.menustyle {
+.menuStyle {
   height: calc(100vh - 93px);
   background-color: #f8f8f8;
   overflow-y: scroll;
-  .leftTree {
-    padding: 0 10px 10px 10px;
-  }
+}
+.menuStyle .leftTree {
+  padding: 0 10px 10px 10px;
 }

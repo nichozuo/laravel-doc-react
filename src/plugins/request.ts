@@ -2,7 +2,7 @@ import { notification } from 'antd';
 import { extend } from 'umi-request';
 
 const request = extend({
-  prefix: 'api/docs/',
+  prefix: 'http://127.0.0.1:8001/api/docs/',
   timeout: 10000,
   headers: {
     'Content-Type': 'application/json',
