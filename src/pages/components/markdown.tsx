@@ -6,21 +6,31 @@ import { history } from 'umi';
 import request from '@/plugins/request';
 import { API } from '@/services/apis';
 
-export default function Markdown(props: any) {
+export default function Markdown() {
   const [markdown, setMarkdown] = useState('');
-
+  const [status, setAutoExpandParent] = useState<boolean>(false);
   useEffect(() => {
     console.log('markdown.tsx:::history', history.location.query);
-    if (history.location.query?.selected != undefined) {
+    let queryName: any = location.pathname.split('/');
+    let type = queryName[queryName.length - 1];
+    let key = history.location.query?.key;
+    if (history.location.query?.key && !status) {
+      setAutoExpandParent(true);
       request
         .post(API.getContent, {
           data: {
-            type: props.type,
-            key: history.location.query.selected,
+            type: type,
+            key: key,
           },
         })
         .then((res) => {
-          setMarkdown(res.data ? res.data.content : '暂无数据');
+          setAutoExpandParent(false);
+          setMarkdown(
+            res.data && res.data.content ? res.data.content : '暂无数据',
+          );
+        })
+        .catch((err) => {
+          setAutoExpandParent(false);
         });
     }
   }, [history.location.query]);

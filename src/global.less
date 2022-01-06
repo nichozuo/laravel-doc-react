@@ -72,3 +72,58 @@
 .menuStyle .leftTree {
   padding: 0 10px 10px 10px;
 }
+.sidebar {
+  .ant-tree-switcher {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tree-title-multi {
+    p {
+      line-height: 130%;
+    }
+    p:nth-child(1) {
+      font-size: 15px;
+      margin: 10px 0 0 0;
+    }
+    p:nth-child(2) {
+      font-size: 12px;
+      margin: 0 0 5px 0;
+      color: rgba(0, 0, 0, 0.5);
+      text-align: left;
+    }
+  }
+
+  .tree-title-multi-inline {
+    p {
+      line-height: 32px;
+      float: left;
+      margin: 0;
+    }
+    p:nth-child(2) {
+      margin-left: 6px;
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .tree-title-single {
+    p {
+      line-height: 32px;
+      float: left;
+      margin: 0;
+    }
+  }
+}
+.ant-tree-node-selected {
+  .ant-tree-title {
+    > div > p:nth-child(2) {
+      color: #fff;
+    }
+  }
+}
+.ant-tree-node-content-wrapper {
+  display: flex;
+  align-items: center;
+}

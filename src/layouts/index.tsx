@@ -38,6 +38,9 @@ export default function ({ children }: IRouteComponentProps) {
       ],
     },
   };
+  useEffect(() => {
+    setActiveSkey(history.location.pathname);
+  }, [history.location.pathname]);
   return (
     <ProLayout
       {...layoutConfig}
