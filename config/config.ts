@@ -8,6 +8,7 @@ export default defineConfig({
   fastRefresh: {},
   mfsu: {},
   base: '/docs/',
+  publicPath: '/docs/',
   dynamicImport: {},
   hash: true,
   history: { type: 'browser' },
