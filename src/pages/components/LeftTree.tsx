@@ -8,7 +8,7 @@ const { DirectoryTree } = Tree;
 const Title = ({ title, subTitle, multi }: any) => {
   const cls = subTitle
     ? multi
-      ? 'tree-title-multi'
+      ? 'tree-title-multi-inline'
       : 'tree-title-multi-inline'
     : 'tree-title-single';
   return (
