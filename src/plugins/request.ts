@@ -17,7 +17,7 @@ const request = extend({
 
 request.interceptors.response.use(async (response) => {
   const data = await response.clone().json();
-  console.log('response data', data);
+  // console.log('response data', data);
   if (data.code !== 0) {
     notification['error']({
       message: data.message,

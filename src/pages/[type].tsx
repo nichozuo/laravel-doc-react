@@ -1,11 +1,8 @@
 import ResizePanel from 'react-resize-panel';
-import { useState } from 'react';
-import ApiContent from './components/ApiContent';
 import LeftMenu from './components/LeftMenu';
+import RightContent from './components/RightContent';
 
 export default function () {
-  const typeName = useState('modules');
-
   return (
     <div className="container">
       <div className="body">
@@ -13,7 +10,7 @@ export default function () {
           <LeftMenu />
         </ResizePanel>
         <div className="content panel">
-          <ApiContent />
+          <RightContent />
         </div>
       </div>
     </div>

@@ -6,11 +6,17 @@ export default defineConfig({
     type: 'none',
   },
   fastRefresh: {},
-  mfsu: {},
-  base: '/docs/',
+  // mfsu: {},
   publicPath: '/docs/',
   dynamicImport: {},
   hash: true,
-  history: { type: 'browser' },
+  history: { type: 'hash' },
   title: 'API Document',
+  proxy: {
+    '/api': {
+      target: 'http://127.0.0.1:8000/api/',
+      changeOrigin: true,
+      pathRewrite: { '^/api': '' },
+    },
+  },
 });
