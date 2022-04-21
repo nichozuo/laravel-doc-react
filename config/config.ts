@@ -1,5 +1,4 @@
 import { defineConfig } from 'umi';
-import { IConfigFromPlugins } from '../src/.umi/core/pluginConfig.d';
 
 export default defineConfig({
   nodeModulesTransform: {
@@ -7,7 +6,7 @@ export default defineConfig({
   },
   fastRefresh: {},
   // mfsu: {},
-  publicPath: '/docs/',
+  publicPath: './',
   dynamicImport: {},
   hash: true,
   history: { type: 'hash' },
